@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./asset/fontawesome/css/all.css">
+
+  </head>
+  <body>
+    <div class="todo__container">
+      <div class="todo__header">
+        <span class="todo__title">TODO APP</span>
+        <img class="todo__insert-icon btn" src="./insert-icon.svg" onclick="toggleModal()">
+      </div>
+      <ul class="todo__List">
+        <!-- <li class="todo__item">
+          <div class="todo__complete btn"></div>
+            <div class="todo__info">
+              <span class="todo__info-title">İş 1</span>
+              <span class="todo__info-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel incidunt voluptatem laboriosam nemo odio tempora consectetur. Optio, vitae, nobis consequuntur et vel nihil vero odit fuga commodi saepe quasi totam?</span>
+            </div>
+            <img class="btn" src="./delete.png" alt="">
+        </li>
+        <li class="todo__item complete">
+          <div class="todo__complete btn">
+            <img src="./checked.svg">
+          </div>
+            <div class="todo__info">
+              <span class="todo__info-title">İş 1</span>
+              <span class="todo__info-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel incidunt voluptatem laboriosam nemo odio tempora consectetur. Optio, vitae, nobis consequuntur et vel nihil vero odit fuga commodi saepe quasi totam?</span>
+            </div>
+            <img class="btn" src="./delete.png">
+        </li> -->
+       
+        <!-- <li class="none-todos">
+          Henüz Bir Şey Eklemediniz
+        </li> -->
+      </ul>
+      <div class="todo__modal">
+        <form id="addTodoForm">
+          <div class="todo__modal-body ">
+              <input name="title" class="form__control form__control-input" type="text" placeholder="Başlık">
+            <textarea name="desc" class="form__control form__control-textarea" type="text" placeholder="Açıklama"></textarea>
+            <button class="btn btn-save" onclick="addTodoItems()">
+              <img src="./checked.svg" /> KAYDET
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
